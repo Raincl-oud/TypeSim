@@ -1,14 +1,18 @@
 # TypeSim ⌨️
+
 **An advanced, human-like typing simulation utility for Windows.**
+
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Platform Windows](https://img.shields.io/badge/platform-Windows-0078D6.svg)](https://www.microsoft.com/windows)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/TypeSim/release.yml?branch=main)](https://github.com/your-username/TypeSim/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Raincl-oud/TypeSim/release.yml?branch=main)](https://github.com/Raincl-oud/TypeSim/actions)
+
 </div>
----
 ## 📌 Overview
-**TypeSim** simulates natural, human keyboard input directly into any active Windows application. Unlike rudimentary auto-typers that inject bulk text instantaneously, TypeSim accurately mirrors natural typing patterns, including keystroke latency jitter, periodic cognitive pauses, configurable bursts, simulated typographic errors with automatic backspace corrections, and non-BMP Unicode / Emoji fallback handling.
+
+*TypeSim* simulates natural, human keyboard input directly into any active Windows application. Unlike rudimentary auto-typers that inject bulk text instantaneously, TypeSim accurately mirrors natural typing patterns, including keystroke latency jitter, periodic cognitive pauses, configurable bursts, simulated typographic errors with automatic backspace corrections, and non-BMP Unicode / Emoji fallback handling.
 ---
+
 ## ✨ Key Features
 - **Natural Human Behavior Emulation**:
   - Configurable Words Per Minute (WPM: 10 - 400).
