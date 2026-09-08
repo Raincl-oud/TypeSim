@@ -5,7 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Platform Windows](https://img.shields.io/badge/platform-Windows-0078D6.svg)](https://www.microsoft.com/windows)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/Raincl-oud/TypeSim/release.yml?branch=main)](https://github.com/Raincl-oud/TypeSim/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Raincl-oud/TypeSimhttps://github.com/Raincl-oud/TypeSim/workflows//release.yml?branch=main)](https://github.com/Raincl-oud/TypeSim/actions)
 
 ## 📌 Overview
 
