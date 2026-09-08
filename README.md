@@ -7,11 +7,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/Raincl-oud/TypeSim/release.yml?branch=main)](https://github.com/Raincl-oud/TypeSim/actions)
 
-</div>
 ## 📌 Overview
 
 *TypeSim* simulates natural, human keyboard input directly into any active Windows application. Unlike rudimentary auto-typers that inject bulk text instantaneously, TypeSim accurately mirrors natural typing patterns, including keystroke latency jitter, periodic cognitive pauses, configurable bursts, simulated typographic errors with automatic backspace corrections, and non-BMP Unicode / Emoji fallback handling.
----
 
 ## ✨ Key Features
 - **Natural Human Behavior Emulation**:
@@ -41,9 +39,7 @@
 | **`F9`** | Start / Resume typing | System-wide Global |
 | **`F10`** | Pause typing | System-wide Global |
 | **`F11`** | Abort / Stop typing | System-wide Global |
-| **`Ctrl + Backspace`** | Delete previous word | Main Input Editor |
-| **`Ctrl + Delete`** | Delete next word | Main Input Editor |
-| **`Shift + Delete`** | Delete active line | Main Input Editor |
+
 ---
 ## 🚀 Getting Started
 ### Prerequisites
