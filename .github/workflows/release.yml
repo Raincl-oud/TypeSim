@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
@@ -26,9 +26,29 @@ jobs:
           pip install -r requirements.txt
           pip install pyinstaller
 
-      - name: Build executable
+      - name: Run unit tests
+        env:
+          QT_QPA_PLATFORM: offscreen
         run: |
-          pyinstaller --onefile --windowed --name TypeSim main.py
+          python -m unittest discover -s tests -v
+
+      - name: Build executable
+        shell: pwsh
+        run: |
+          python -m PyInstaller --noconfirm --clean --onefile --windowed --name TypeSim `
+            --icon assets/typesim.ico --add-data "assets/typesim.ico;assets" `
+            --exclude-module tkinter --exclude-module pynput --exclude-module tests --exclude-module tools `
+            --exclude-module PyQt6.QtBluetooth --exclude-module PyQt6.QtDBus --exclude-module PyQt6.QtDesigner `
+            --exclude-module PyQt6.QtHelp --exclude-module PyQt6.QtMultimedia --exclude-module PyQt6.QtMultimediaWidgets `
+            --exclude-module PyQt6.QtNetwork --exclude-module PyQt6.QtNfc --exclude-module PyQt6.QtOpenGL `
+            --exclude-module PyQt6.QtOpenGLWidgets --exclude-module PyQt6.QtPositioning --exclude-module PyQt6.QtPrintSupport `
+            --exclude-module PyQt6.QtQml --exclude-module PyQt6.QtQuick --exclude-module PyQt6.QtQuick3D `
+            --exclude-module PyQt6.QtQuickControls2 --exclude-module PyQt6.QtQuickWidgets --exclude-module PyQt6.QtRemoteObjects `
+            --exclude-module PyQt6.QtSensors --exclude-module PyQt6.QtSerialPort --exclude-module PyQt6.QtSpatialAudio `
+            --exclude-module PyQt6.QtSql --exclude-module PyQt6.QtStateMachine --exclude-module PyQt6.QtSvgWidgets `
+            --exclude-module PyQt6.QtTest --exclude-module PyQt6.QtTextToSpeech --exclude-module PyQt6.QtWebChannel `
+            --exclude-module PyQt6.QtWebSockets --exclude-module PyQt6.QtXml --exclude-module PyQt6.QtWebEngineCore `
+            --exclude-module PyQt6.QtWebEngineWidgets main.py
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

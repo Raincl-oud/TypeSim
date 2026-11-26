@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+Output/
+*.spec
+.pytest_cache/
+.venv/
+venv/
+.typesim/
